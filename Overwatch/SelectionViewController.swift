@@ -20,6 +20,7 @@ class SelectionViewController: UIViewController, UIScrollViewDelegate {
     var heroType: HeroType! {
         didSet {
             game.heroType = heroType
+            updateStackViewWithHeroes()
         }
     }
     var delegate = self
@@ -37,19 +38,31 @@ class SelectionViewController: UIViewController, UIScrollViewDelegate {
         case 3: heroType = HeroType.support
         default: heroType = HeroType.offense
         }
-        print(characterStackViewWidthConstraint.multiplier)
     }
     
     func updateStackViewWithHeroes() {
         //var arrayCount = HeroName.heroes(with: heroType).count
-        let selectedArray = HeroName.heroes(with: heroType)
-        let imageViews: [UIImage] = []
-        let nameViews: [String] = []
-        for i in selectedArray {
-            let heroArray = HeroName.heroes(with: i)
-            
+        var selectedArray: [Hero] = []
+        var unwrappedHero: HeroType = heroType
+        switch unwrappedHero {
+        case HeroType.offense:
+            selectedArray = game.offenseCharacters
+        case HeroType.defense:
+            selectedArray = game.defenseCharacters
+        case HeroType.support:
+            selectedArray = game.supportCharacters
+        case HeroType.tank:
+            selectedArray = game.tankCharacters
+        }
+        heroScrollView.contentSize.width = view.frame.width * CGFloat(selectedArray.count)
+        var imageViews: [UIImage] = []
+        var nameViews: [String] = []
+        for hero in selectedArray {
+            imageViews.append(hero.profileImage)
+            nameViews.append(hero.name.description)
+            let image: UIImage = hero.produceButtonImage()
+            self.heroScrollView.addSubview(containerView)
         }
         
-        
-}
+    }
 }
