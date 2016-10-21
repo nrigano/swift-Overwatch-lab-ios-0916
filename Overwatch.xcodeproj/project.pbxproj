@@ -17,6 +17,10 @@
 		7DC007E71DB9B3DF004A9268 /* HeroTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007E61DB9B3DF004A9268 /* HeroTypeTests.swift */; };
 		7DC007EA1DB9B654004A9268 /* WeaponProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007E91DB9B654004A9268 /* WeaponProtocolTests.swift */; };
 		7DC007EC1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC007EB1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift */; };
+		95F6A59D1DBA5BFF0068F73E /* HeroAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F6A59C1DBA5BFF0068F73E /* HeroAttributes.swift */; };
+		95F6A59F1DBA62590068F73E /* OverwatchHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F6A59E1DBA62590068F73E /* OverwatchHero.swift */; };
+		95F6A5A11DBA69140068F73E /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F6A5A01DBA69140068F73E /* Hero.swift */; };
+		95F6A5A31DBA6B720068F73E /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95F6A5A21DBA6B720068F73E /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		7DC007E61DB9B3DF004A9268 /* HeroTypeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroTypeTests.swift; sourceTree = "<group>"; };
 		7DC007E91DB9B654004A9268 /* WeaponProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeaponProtocolTests.swift; sourceTree = "<group>"; };
 		7DC007EB1DB9B8B5004A9268 /* OverwatchHeroProtocolTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwatchHeroProtocolTests.swift; sourceTree = "<group>"; };
+		95F6A59C1DBA5BFF0068F73E /* HeroAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HeroAttributes.swift; path = ../HeroAttributes.swift; sourceTree = "<group>"; };
+		95F6A59E1DBA62590068F73E /* OverwatchHero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverwatchHero.swift; sourceTree = SOURCE_ROOT; };
+		95F6A5A01DBA69140068F73E /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		95F6A5A21DBA6B720068F73E /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +94,10 @@
 			isa = PBXGroup;
 			children = (
 				7D69AE6A1DAAF58B006B180A /* AppDelegate.swift */,
+				95F6A59C1DBA5BFF0068F73E /* HeroAttributes.swift */,
+				95F6A59E1DBA62590068F73E /* OverwatchHero.swift */,
+				95F6A5A01DBA69140068F73E /* Hero.swift */,
+				95F6A5A21DBA6B720068F73E /* Game.swift */,
 				7D69AE6C1DAAF58B006B180A /* ViewController.swift */,
 				7D69AE6E1DAAF58B006B180A /* Main.storyboard */,
 				7D69AE711DAAF58B006B180A /* Assets.xcassets */,
@@ -221,8 +233,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95F6A5A11DBA69140068F73E /* Hero.swift in Sources */,
+				95F6A5A31DBA6B720068F73E /* Game.swift in Sources */,
+				95F6A59D1DBA5BFF0068F73E /* HeroAttributes.swift in Sources */,
 				7D69AE6D1DAAF58B006B180A /* ViewController.swift in Sources */,
 				7D69AE6B1DAAF58B006B180A /* AppDelegate.swift in Sources */,
+				95F6A59F1DBA62590068F73E /* OverwatchHero.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
